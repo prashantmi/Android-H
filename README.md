@@ -90,3 +90,65 @@ echo "            \|__|     \|__|\|__|\|__|\|__|\|_______|\|__|\|__|\|__|\|__|\|
 echo.
 Pause >nul
 ::copy code And Save As .batch File 
+
+                                                                                                                                  
+                             `.`                                    ..                              
+                             omh-                                 `+mm.                             
+                             `sNm/          ``.......```         .yNm/                              
+                              `+mNs``.:/oyhddmmmmmmmmmmddys+:-.`-dNh-                               
+                                /NNddmNMMMMMMMMMMMMMMMMMMMMMNNmdmNh.                                
+                            `-+hmNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNds:.                             
+                          .+hNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNms:`                          
+                        .smMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNh/`                        
+                      .omMMMMMMMMMMNNNMMMMMMMMMMMMMMMMMMMMMMMNNNMMMMMMMMMMNh/`                      
+                     /dMMMMMMMMMMNdyyyhmMMMMMMMMMMMMMMMMMMMNdyyyhmMMMMMMMMMMNy.                     
+                   `oNMMMMMMMMMMMdsssssyNMMMMMMMMMMMMMMMMMMmsssssyNMMMMMMMMMMMd:                    
+                  `sNMMMMMMMMMMMMmyssssdMMMMMMMMMMMMMMMMMMMNysssshNMMMMMMMMMMMMm:                   
+                  oNMMMMMMMMMMMMMMNmmmNMMMMMMMMMMMMMMMMMMMMMNmmmmNMMMMMMMMMMMMMMm-                  
+                 -NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMh                  
+                 yMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN-                 
+                 mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMo                 
+                `dmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmms                 
+                 ``:.``````````````````````````````````````````````````````````--``                 
+        `...`    ``:.``````````````````````````````````````````````````````````--``   ``..``        
+     `+hmNNNmh+``mmNmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmy -sdmNNNds:      
+    :mMMMMMMMMMm/NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMhsNMMMMMMMMNy`    
+   `mMMMMMMMMMMMNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNMMMMMMMMMMMMo    
+   -NMMMMMMMMMMMMNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNMMMMMMMMMMMMh    
+   -NMMMMMMMMMMMMNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNMMMMMMMMMMMMh    
+   -NMMMMMMMMMMMMNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNMMMMMMMMMMMMh    
+   -NMMMMMMMMMMMMNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNMMMMMMMMMMMMh    
+   -NMMMMMMMMMMMMNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNMMMMMMMMMMMMh    
+   -NMMMMMMMMMMMMNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNMMMMMMMMMMMMh    
+   -NMMMMMMMMMMMMNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNMMMMMMMMMMMMh    
+   -NMMMMMMMMMMMMNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNMMMMMMMMMMMMh    
+   -NMMMMMMMMMMMMNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNMMMMMMMMMMMMh    
+   -NMMMMMMMMMMMMNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNMMMMMMMMMMMMh    
+   -NMMMMMMMMMMMMNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNMMMMMMMMMMMMh    
+   -NMMMMMMMMMMMMNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNMMMMMMMMMMMMh    
+   -NMMMMMMMMMMMMNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNMMMMMMMMMMMMh    
+   -NMMMMMMMMMMMMNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNMMMMMMMMMMMMh    
+   .NMMMMMMMMMMMNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNMMMMMMMMMMMMy    
+    hMMMMMMMMMMMdNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmNMMMMMMMMMMN/    
+    .sNMMMMMMMNs-NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMh/dNMMMMMMMd/     
+      .+shhhs+. `NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMh `:oyhhyo:`      
+          `     `NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMh     ``          
+                `NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMh                 
+                `NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMh                 
+                `NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMs                 
+                 yMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN:                 
+                 .hNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN+                  
+                  `+dNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmy-                   
+                    `:+yhddddddNNMMMMMMMMMMNdddddddddddmNNMMMMMMMMMMNddddddhs/.                     
+                              :NMMMMMMMMMMMN-          sMMMMMMMMMMMMd`                              
+                              :MMMMMMMMMMMMN.          sMMMMMMMMMMMMd                               
+                              :MMMMMMMMMMMMN.          sMMMMMMMMMMMMd                               
+                              :MMMMMMMMMMMMN.          sMMMMMMMMMMMMd                               
+                              :MMMMMMMMMMMMN.          sMMMMMMMMMMMMd                               
+                              :MMMMMMMMMMMMN.          sMMMMMMMMMMMMd                               
+                              -MMMMMMMMMMMMN.          oMMMMMMMMMMMMd                               
+                              `mMMMMMMMMMMMd           :NMMMMMMMMMMMs                               
+                               -dNMMMMMMMNh.            /mMMMMMMMMNs`                               
+                                `:sdmNmds:               `+ydNNmho.                                 
+                                                                                                    
+                                                                        
