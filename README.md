@@ -1,5 +1,7 @@
 # Android-Hacker
 Android Hacker Is a Software Based On ADB So To Use This Software You Need "Developer Option Enabled" 
+
+::copy code And Save As .batch File 
 @echo off
 mode 1000
 color 0B
@@ -87,3 +89,4 @@ echo "           \ \__\    \ \__\\ _\\ \__\ \__ ______\  \ \__\ \__\ \__\ \__\ \
 echo "            \|__|     \|__|\|__|\|__|\|__|\|_______|\|__|\|__|\|__|\|__|\|__| \|__|    \|__|             ";
 echo.
 Pause >nul
+::copy code And Save As .batch File 
