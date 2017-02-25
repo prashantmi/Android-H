@@ -1,5 +1,6 @@
 # Android Hacker
 Android Hacker Is a Software Based On ADB Which Can Compromise Any Android Device So To Use This Software You Need "Developer Option,USB debugging Enabled" 
+
                                     ________________________
                                             :Disclaimer:
                                            __________________________
