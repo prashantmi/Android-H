@@ -16,7 +16,7 @@
 * If you don't know how to code, you can help me by proposing improvements or reporting bugs. Make sure you do understand how the tool works before opening an issue.
 
 # License
-
+* Android-H is licensed under the GPL license. See LICENSE for more information.
 # Disclaimer
 
  * This application is issued only for knowledge purpose any actions or activities related to this application/script is solely your responsibility, the misuse of this application/script can result in criminal charges brought against the persons in question.
@@ -29,4 +29,6 @@
 
 # Note
 
-Do not make changes to package otherwise software won't work.
+* Do not make changes to package/binary unless you know how it works otherwise software won't work.
+* If you are instreated in contributing you can ask me for the source code.
+* Contact:- prashantmindia@gmail.com
