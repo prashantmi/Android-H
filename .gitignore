@@ -1,3 +1,7 @@
+
+# Created by https://www.gitignore.io/api/batch,windows,android,executable
+
+### Android ###
 # Built application files
 *.apk
 *.ap_
@@ -35,6 +39,64 @@ captures/
 # Intellij
 *.iml
 .idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/dictionaries
+.idea/libraries
 
 # Keystore files
 *.jks
+
+# External native build folder generated in Android Studio 2.2 and later
+.externalNativeBuild
+
+# Google Services (e.g. APIs or Firebase)
+google-services.json
+
+# Freeline
+freeline.py
+freeline/
+freeline_project_description.json
+
+### Android Patch ###
+gen-external-apklibs
+
+### Batch ###
+# BatchFiles
+*.bat
+*.cmd
+*.btm
+
+### Executable ###
+*.app
+*.cgi
+*.com
+*.exe
+*.gadget
+*.jar
+*.pif
+*.vb
+*.wsf
+
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# End of https://www.gitignore.io/api/batch,windows,android,executable
