@@ -1,0 +1,19 @@
+AntiGuard
+---------
+AntiGuard is an Android app I wrote that will assist you in unlocking a phone.
+
+Since ADB doesn't always give you root, you might be limited in what you can do. However, the standard ADB shell user is also very powerful.
+
+ * AntiGuard is now built into the regular toolset!
+
+ * To install AntiGuard, you simply need to run
+   * `adb install AntiGuard.apk`
+
+ * To unlock the screen once install
+   * `adb shell am start -S io.kos.antiguard/.unlock`
+
+ * To uninstall, hit the uninstall button, or run this command
+   * `adb uninstall io.kos.antiguard`
+
+
+Antiguard is the part of (p2p-adb-master apk Android or PC To android adb hacking)
