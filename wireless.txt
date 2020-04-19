@@ -1,0 +1,70 @@
+::@echo off
+:getip
+set ip=""
+set /p ip=[-]  Please Enter IP Address :
+echo.
+if %ip%=="" echo      Please Enter Correct Ip & pause >nul & cls & goto getip
+goto wireless
+
+:wireless
+setlocal
+adb kill-server
+::connected
+adb connect %ip%:5555 | find /i "connected to" >nul
+    if errorlevel 0 
+       (
+    	cls
+        echo. & echo        Android Hacker Is connected With The Victim's Device Wirelessly.
+        echo        Now You Can Remove The USB & echo.
+        echo        Press Any Key To Continue To Menu 2 & pause >nul & goto menu2
+        )
+    else
+       (
+         ::laptop wifi off 
+         adb connect %IP%:5555 | find /i "unreachable host" >nul
+        )
+     if errorlevel 0 
+              (
+                 echo. & echo laptop/Desktop Wifi IS Off Or Not connected To Local Wifi/LAN
+                 echo. & echo connect laptop/Desktop To The LAN. & echo. & echo pause >nul
+                 echo Press Any Key To Go Back & goto getip
+                )
+     else
+           (
+             	:: Wrong Ip format
+             	adb connect %IP%:5555 | find /i "no such host" >nul
+            )
+      if errorlevel 0
+              (
+                  echo. & echo  Wrong Format IP Address...
+                  echo. & echo  Please Enter IP In Given Format Example "192.168.10.10"
+                  echo. & echo  Press Any Key To Continue.... & goto getip
+                )
+        else
+              (
+             	    	::5555 port off
+             	    	adb connect %IP%:5555 | find /i "refused it" >nul
+         if errorlevel 0 
+               (
+             	      echo. & echo Android Wireless Port Is Off
+             	      echo. & echo Press Any Key To Turn On & pause >nul & goto adbport
+             	 )
+             	            
+          else
+              (
+             	   :: Android Wifi Off
+             	   adb connect %IP%:5555 | find /i "faild to respond" >nul
+              )
+          if errorlevel 0 
+                 (
+                     echo. & echo  Could Not connect To Given IP
+             	     echo. & echo  Reason Can Be...
+             	     echo. & echo  Android Is Not connected To Local Wifi
+             	     echo. & echo  Or No Device With This Ip In LAN & echo >nul & goto getip
+             	   )
+              else
+                 (
+             	   echo.
+             	   echo   Unknown Error & pause >nul & goto getip
+                  )
+pause >nul

